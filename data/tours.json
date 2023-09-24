@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "lieutenant_id_foreign_key": 1,
+      "tour": "Tour 1"
+    },   
+    {
+        "id": 2,
+        "lieutenant_id_foreign_key": 1,
+        "tour": "Tour 3"
+      },
+    {
+      "id": 3,
+      "lieutenant_id_foreign_key": 2,
+      "tour": "Tour 1"
+    },
+    {
+      "id": 4,
+      "lieutenant_id_foreign_key": 2,
+      "tour": "Tour 2"
+    },
+    {
+      "id": 5,
+      "lieutenant_id_foreign_key": 2,
+      "tour": "Tour 3"
+    }, 
+    {
+        "id": 6,
+        "lieutenant_id_foreign_key": 3,
+        "tour": "Tour 1"
+      },     
+      {
+        "id": 7,
+        "lieutenant_id_foreign_key": 3,
+        "tour": "Tour 2"
+      }, 
+    {
+        "id": 8,
+        "lieutenant_id_foreign_key": 4,
+        "tour": "Tour 4"
+      },   
+       {
+        "id": 9,
+        "lieutenant_id_foreign_key": 5,
+        "tour": "Tour 1"
+      }, 
+      {
+          "id": 10,
+          "lieutenant_id_foreign_key": 6,
+          "tour": "Tour 3"
+        }, 
+      {
+          "id": 11,
+          "lieutenant_id_foreign_key": 7,
+          "tour": "Tour 1"
+        },   
+       {
+            "id": 12,
+            "lieutenant_id_foreign_key": 7,
+            "tour": "Tour 2"
+          },
+          {
+            "id": 13,
+            "lieutenant_id_foreign_key": 7,
+            "tour": "Tour 3"
+          },   
+    {
+      "id": 14,
+      "lieutenant_id_foreign_key": 8,
+      "tour": "Tour 4"
+    }
+  ]

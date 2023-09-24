@@ -1,0 +1,66 @@
+[
+    { 
+      "name": "American Lieutenant 5",
+      "unit": "Alpha",
+      "home": "California",
+      "rank": 1,
+      "commander": "American General 1",
+      "id": 1
+    },
+    { 
+      "name": "American Lieutenant 6",
+      "unit": "Bravo",
+      "home": "New York",
+      "rank": 7,
+      "commander": "American General 2",
+      "id": 2
+    },
+    { 
+      "name": "American Lieutenant 7",
+      "unit": "Charlie",
+      "home": "Arizona",
+      "rank": 6,
+      "commander": "American General 3",
+      "id": 3
+    },
+    { 
+      "name": "American Lieutenant 8",
+      "unit": "Foxtrot",
+      "home": "Ohio",
+      "rank": 5,
+      "commander": "American General 4",
+      "id": 4
+    },
+    { 
+        "name": "British Lieutenant E",
+        "unit": "Golf",
+        "home": "Cornwall",
+        "rank": 4,
+        "commander": "British General A",
+        "id": 5
+      },
+      { 
+        "name": "British Lieutenant F",
+        "unit": "Hotel",
+        "home": "Yorkshire",
+        "rank": 3,
+        "commander": "British General B",
+        "id": 6
+      },
+      { 
+        "name": "British Lieutenant G",
+        "unit": "India",
+        "home": "Wales",
+        "rank": 2,
+        "commander": "British General C",
+        "id": 7
+      },
+      { 
+        "name": "British Lieutenant H",
+        "unit": "Juliett",
+        "home": "Buckinghamshire",
+        "rank": 1,
+        "commander": "British General D",
+        "id": 8
+      }
+  ]
