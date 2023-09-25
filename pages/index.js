@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Layout from '../components/layout';
-import { getGeneralsList } from '../lib/read_data';
+import { getGeneralsList } from '../lib/read_firebase_data';
 
 export async function getStaticProps() 
 {
-  let generalsJsonFile = "british_generals.json"
-  const britishGenerals = getGeneralsList(generalsJsonFile);
-  generalsJsonFile = "american_generals.json"
-  const americanGenerals = getGeneralsList(generalsJsonFile);
+  let generalsJsonFile = "british_generals"
+  const britishGenerals = await getGeneralsList(generalsJsonFile);
+  generalsJsonFile = "american_generals"
+  const americanGenerals = await getGeneralsList(generalsJsonFile);
   return {
     props: { britishGenerals, americanGenerals }
   };
@@ -21,7 +21,7 @@ export default function Home( { britishGenerals, americanGenerals } ) {
       <div className="list-group">
         {americanGenerals && americanGenerals.map(
             ({id, name}) => (
-              <Link key={id} href={`/${id}`} className="list-group-item list-group-item-action list-group-item-primary">
+              <Link key={id} href={`/generals/${id}`} className="list-group-item list-group-item-action list-group-item-primary">
                 {name}
               </Link>
             )
@@ -32,7 +32,7 @@ export default function Home( { britishGenerals, americanGenerals } ) {
       <div className="list-group">
         {britishGenerals && britishGenerals.map(
             ({id, name}) => (
-              <Link key={id} href={`/${id}`} className="list-group-item list-group-item-action list-group-item-info">
+              <Link key={id} href={`/generals/${id}`} className="list-group-item list-group-item-action list-group-item-info">
                 {name}
               </Link>
             )

@@ -1,6 +1,6 @@
-import Layout from '../components/layout';
-import { getIdList, getPerson } from '../lib/read_data';
-const JSON_FILE = "lieutenant.json";
+import Layout from '../../components/layout';
+import { getIdList, getPerson } from '../../lib/read_firebase_data';
+const JSON_FILE = "lieutenant";
 
 export async function getStaticProps( { params } )
 {
@@ -14,7 +14,7 @@ export async function getStaticProps( { params } )
 
 export async function getStaticPaths() 
 {
-  const paths = getIdList(JSON_FILE);
+  const paths = await getIdList(JSON_FILE);
   return {
     paths,
     fallback: false
